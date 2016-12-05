@@ -108,7 +108,20 @@ You can provide additional release notes for localization purposes. For instance
     <sparkle:releaseNotesLink>https://example.com/app/2.0.html</sparkle:releaseNotesLink>
     <sparkle:releaseNotesLink xml:lang="de">https://example.com/app/2.0_German.html</sparkle:releaseNotesLink>
 
-Use the `xml:lang` attribute with the appropriate two-letter country code for each localization. You can also use this attribute with the `<description>` tag.
+Use the `xml:lang` attribute with the appropriate code for each localization. The language code format should be the same with the one used on macOS e.g., `zh-Hans` for `Simplified Chinese`. You can also use this attribute with the `<description>` tag. For instance:
+
+```xml
+<description xml:lang="en">
+    <![CDATA[
+        Release notes in English.
+    ]]>
+</description>
+<description xml:lang="zh-Hans">
+    <![CDATA[
+        Release notes in Simplified Chinese.
+    ]]>
+</description>
+```
 
 ## Alternate download locations for other operating systems
 
